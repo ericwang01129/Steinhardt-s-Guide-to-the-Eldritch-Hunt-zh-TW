@@ -1,0 +1,157 @@
+{
+  "SGEH": {
+    "book": {
+      "title": "Steinhardt's Guide to the Eldritch Hunt"
+    },
+    "feature": {
+      "bloodShot": "Blood Shot Option",
+      "eldMelody": "Eldritch Melody",
+      "moonCond": "Moon Conduit",
+      "tortTech": "Torturer's Technique",
+      "divineBlessing": "Divine Blessing",
+      "focusArt": "Focus Art",
+      "finisher": "Finisher"
+    },
+    "journal": {
+      "label": "Steinhardt's Notes",
+      "artConfig": "Configure Panel",
+      "artConfigTitle": "Default Art Panel Size",
+      "configTip": "Display size ratio relative to journal body. A value of <q>0</q> disables display of the panel.",
+      "panelTip": "<p>Using the art panel:</p><p>While reading, some text elements will be highlighted with a gold shadow. These highlights correspond to the top \"card\" displayed in the above stack.</p><p>Cycling through the current stack via the \"<\" and \">\" buttons (below) will update the text highlight if it is currently visible.</p><p>Clicking on the top card will display in full resolution with the option to show players.</p>"
+    },
+    "status": {
+      "bleeding": "Bleeding"
+    },
+    "property": {
+      "awakenedAC": "Awakened Mutation",
+      "momentumAC": "Momemtum Armor (Medium)",
+      "hereticProgression": "Heretic",
+      "pact": {
+        "full": "Warlock Pact",
+        "heretic": "Heretic Pact"
+      },
+      "wep": {
+        "art": "Artillery",
+        "brl": "Barrel",
+        "rlf": "Reload (F)",
+        "rls": "Reload (S)",
+        "blr": "Blaring",
+        "boo": "Booming",
+        "cnc": "Concussive",
+        "fnf": "Fan Fire",
+        "twb": "Twinned Barrel",
+        "spr": "Spread Fire",
+        "sdy": "Steady",
+        "mng": "Moongold"
+      }
+    },
+    "sheet": {
+      "reload": "Reload Barrel",
+      "fnf": {
+        "fanJamTip": "Cannot attack with a jammed or broken weapon.",
+        "briefRules": "Fire multiple shots with a single action."
+      },
+      "twb": {
+        "briefRules": "Fire two barrels at once for increased damage."
+      },
+      "trick": {
+        "title": "Steinhardt's Trick Weapon",
+        "header": "Trick Weapons",
+        "config": "Configure {num} Trick Weapon(s)",
+        "details": "Trick Weapon Forms",
+        "state": {
+          "label": "New Form"
+        },
+        "activateTip": "Unpack to inventory",
+        "deactivateTip": "Remove from inventory and repack",
+        "createForm": "New Form",
+        "createTip": "Create new trick weapon",
+        "defaultName": "New Trick Weapon"
+      },
+      "moons": {
+        "references": "References",
+        "beckonRules": "Beckoning Table",
+        "actions": {
+          "player": "Player Actions",
+          "world": "World Actions"
+        },
+        "appear": {
+          "night": "Night",
+          "day": "Day"
+        },
+        "none": "No visible moon",
+        "noQueue": "No upcoming moons"
+      },
+      "lunar": {
+        "name": "Eldritch Mar Method)"
+      },
+      "beckon": {
+        "name": "Eldritch Moons (Beckoning Method)",
+        "save": "End Session",
+        "saveTip": "Add current session total to the beckoning counter"
+      }
+    },
+    "momentum": {
+      "buttonTitle": "Momentum",
+      "appTitle": "Momentum Control",
+      "count": {
+        "current": "Current: {num}",
+        "max": "Max {num}"
+      },
+      "cannotAdd": "Maximum {name} count reached! No additions made.",
+      "add": "Add",
+      "remove": "Remove",
+      "expend": "Expend All",
+      "chatAdd": "<p>{name} gained!</p>",
+      "chatRemove": "<p>1 {name} removed.</p>",
+      "chatExpend": "<p>{num} {name} expended!</p>"
+    },
+    "chat": {
+      "fnf": {
+        "alias": "{name}, Fan Attack {count}",
+        "noAlias": "Fan Attack {count}",
+        "dmgAlias": "{name}, Fan Damage {count}",
+        "cardFlavor": "Fan Fire Attack",
+        "jammedFlavor": "Weapon is jammed (can attempt repairs)",
+        "jammedFlavorShort": "[Jammed, can repair]",
+        "brokenFlavor": "Weapon is <strong>broken</strong> (time-intensive repairs required)",
+        "brokenFlavorShort": "[Broken, intensive repairs needed]"
+      },
+      "twb": {
+        "cardFlavor":"Twinned Barrel Damage" 
+      },
+      "mng": {
+        "header": "Moongold Weapon",
+        "damage": "Damage vs Non-Humanoid",
+        "versatile": "Versatile vs Non-Humanoid"
+      },
+      "reload": {
+        "fast": "Weapon reloaded quickly",
+        "slow": "Weapon reloaded slowly",
+        "other": "Weapon reloaded"
+      },
+      "repair": {
+        "success": "Within moments, the weapon is unjammed and ready to fire.",
+        "failure": "The malfunction has caused extensive damage to the weapon, and requires extended time or the help of a professional to repair",
+        "pro": "Over an extended period, or with the help of a professional, the weapon is repaired to working order."
+      },
+      "trick": {
+        "transform": "Transform (Bonus Action)",
+        "activated": "{item} changes into its {state} state."
+      },
+      "rollDamage": "Roll Damage",
+      "weaponJam": "Jammed!",
+      "repairJam": "Attempt Repairs",
+      "extensiveRepair": "Repair Over Time" 
+    }
+  },
+  "error": {
+    "unownedTrick": "Cannot actck Weapon."
+  },
+  "TYPES": {
+    "Item": {
+      "steinhardt-guide-to-the-eldritch-hunt-zh-tw.trickwep": "Trick Weapon"
+    }
+  }
+}
+      

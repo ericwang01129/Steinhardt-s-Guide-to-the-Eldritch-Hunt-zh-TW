@@ -1,0 +1,156 @@
+{
+  "SGEH": {
+    "book": {
+      "title": "施坦哈德的異界狩獵指南"
+    },
+    "feature": {
+      "bloodShot": "血彈選項",
+      "eldMelody": "異界樂章",
+      "moonCond": "月之導引",
+      "tortTech": "拷問者技法",
+      "divineBlessing": "神聖祝福",
+      "focusArt": "專注武藝",
+      "finisher": "終結技"
+    },
+    "journal": {
+      "label": "施坦哈德筆記",
+      "artConfig": "設定圖面",
+      "artConfigTitle": "預設圖面大小",
+      "configTip": "圖面相對於日誌內文的顯示比例。設為 <q>0</q> 將停用此圖面。",
+      "panelTip": "<p>圖面使用說明：</p><p>閱讀時，部份文字會以金色陰影標示。這些標示對應於上方堆疊中最頂端的「卡片」。</p><p>使用下方的「<」與「>」按鈕切換目前堆疊內容時，若該標示正顯示中，文字標示也會一併更新。</p><p>點擊最頂端的卡片可開啟完整解析度圖像，並可選擇向玩家展示。</p>"
+    },
+    "status": {
+      "bleeding": "出血"
+    },
+    "property": {
+      "awakenedAC": "覺醒突變",
+      "momentumAC": "衝勢護甲（中甲）",
+      "hereticProgression": "異端",
+      "pact": {
+        "full": "契術師契約",
+        "heretic": "異端契約"
+      },
+      "wep": {
+        "art": "重砲",
+        "brl": "鏜管",
+        "rlf": "裝填（快）",
+        "rls": "裝填（慢）",
+        "blr": "轟鳴",
+        "boo": "爆響",
+        "cnc": "震盪",
+        "fnf": "扇形射擊",
+        "twb": "雙管",
+        "spr": "散射",
+        "sdy": "穩固",
+        "mng": "月金"
+      }
+    },
+    "sheet": {
+      "reload": "重新裝填鏜管",
+      "fnf": {
+        "fanJamTip": "卡彈或損壞的武器無法進行攻擊。",
+        "briefRules": "以單一動作射擊多發子彈。"
+      },
+      "twb": {
+        "briefRules": "同時擊發雙管以提升傷害。"
+      },
+      "trick": {
+        "title": "施坦哈德詭器",
+        "header": "詭器",
+        "config": "設定 {num} 件詭器",
+        "details": "詭器形態",
+        "state": {
+          "label": "新形態"
+        },
+        "activateTip": "取出至物品欄",
+        "deactivateTip": "從物品欄移除並收納",
+        "createForm": "新形態",
+        "createTip": "建立新的詭器",
+        "defaultName": "新詭器"
+      },
+      "moons": {
+        "references": "參考資料",
+        "beckonRules": "呼喚表",
+        "actions": {
+          "player": "玩家動作",
+          "world": "世界動作"
+        },
+        "appear": {
+          "night": "夜晚",
+          "day": "白晝"
+        },
+        "none": "無可見之月",
+        "noQueue": "無即將到來的月相"
+      },
+      "lunar": {
+        "name": "異界之月（標記法）"
+      },
+      "beckon": {
+        "name": "異界之月（呼喚法）",
+        "save": "結束本場",
+        "saveTip": "將本場累計加入呼喚計數器"
+      }
+    },
+    "momentum": {
+      "buttonTitle": "衝勢",
+      "appTitle": "衝勢控制",
+      "count": {
+        "current": "目前：{num}",
+        "max": "上限 {num}"
+      },
+      "cannotAdd": "已達 {name} 上限！未進行增加。",
+      "add": "增加",
+      "remove": "移除",
+      "expend": "全部消耗",
+      "chatAdd": "<p>獲得 {name}！</p>",
+      "chatRemove": "<p>移除 1 點 {name}。</p>",
+      "chatExpend": "<p>消耗 {num} 點 {name}！</p>"
+    },
+    "chat": {
+      "fnf": {
+        "alias": "{name}，扇形攻擊 {count}",
+        "noAlias": "扇形攻擊 {count}",
+        "dmgAlias": "{name}，扇形傷害 {count}",
+        "cardFlavor": "扇形射擊攻擊",
+        "jammedFlavor": "武器卡彈中（可嘗試排除故障）",
+        "jammedFlavorShort": "[卡彈，可排除]",
+        "brokenFlavor": "武器已 <strong>損壞</strong>（需耗時修復）",
+        "brokenFlavorShort": "[損壞，需長時間修復]"
+      },
+      "twb": {
+        "cardFlavor": "雙管傷害"
+      },
+      "mng": {
+        "header": "月金武器",
+        "damage": "對非人形傷害",
+        "versatile": "對非人形多用途傷害"
+      },
+      "reload": {
+        "fast": "武器已快速裝填",
+        "slow": "武器已緩慢裝填",
+        "other": "武器已裝填"
+      },
+      "repair": {
+        "success": "片刻之間，武器排除卡彈，重新可以擊發。",
+        "failure": "故障已對武器造成嚴重損害，需要長時間或專業人員協助才能修復。",
+        "pro": "經過長時間，或在專業人員協助下，武器修復至可運作的狀態。"
+      },
+      "trick": {
+        "transform": "變形（附贈動作）",
+        "activated": "{item} 變換為其 {state} 形態。"
+      },
+      "rollDamage": "擲傷害",
+      "weaponJam": "卡彈！",
+      "repairJam": "嘗試排除故障",
+      "extensiveRepair": "長時間修復"
+    }
+  },
+  "error": {
+    "unownedTrick": "無法使用未持有的詭器。"
+  },
+  "TYPES": {
+    "Item": {
+      "steinhardt-guide-to-the-eldritch-hunt-zh-tw.trickwep": "詭器"
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+    "id": "steinhardt-guide-to-the-eldritch-hunt-zh-tw",
+    "title": "Steinhardt's Guide to the Eldritch Hunt (zh-TW Integrated)",
+    "description": "施坦哈德的狩獵指南（無異端章節）整合中文翻譯版。整合自 segh-monkeydm-without-heretic 模組與 5e-complete 提供的繁體中文 Babele 翻譯文本。",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "MonkeyDM",
+            "url": "https://www.patreon.com/monkeydm"
+        },
+        {
+            "name": "badgerwerks",
+            "url": "https://github.com/trioderegion"
+        },
+        {
+            "name": "InYourLibrary",
+            "url": "https://github.com/InYourLibrary"
+        },
+        {
+            "name": "Eric (integration & zh-TW translation bundle)",
+            "url": ""
+        }
+    ],
+    "esmodules": [
+        "steinhardt-guide-to-the-eldritch-hunt-zh-tw.mjs",
+        "babele-register.js"
+    ],
+    "styles": [
+        "steinhardt-guide-to-the-eldritch-hunt-zh-tw.css"
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        },
+        {
+            "lang": "zh-tw",
+            "name": "繁體中文",
+            "path": "lang/zh-tw.json"
+        }
+    ],
+    "packs": [
+        {
+            "name": "sgeh-tables",
+            "path": "packs/sgeh-tables",
+            "type": "RollTable",
+            "label": "Steinhardt's Tables",
+            "banner": "modules/steinhardt-guide-to-the-eldritch-hunt-zh-tw/static/assets/cutouts/banners/compendium.webp",
+            "system": "dnd5e"
+        },
+        {
+            "name": "sgeh-stories",
+            "path": "packs/sgeh-stories",
+            "type": "Adventure",
+            "label": "Steinhardt's Stories",
+            "banner": "modules/steinhardt-guide-to-the-eldritch-hunt-zh-tw/static/assets/cutouts/banners/compendium.webp",
+            "system": "dnd5e"
+        },
+        {
+            "name": "sgeh-notes",
+            "path": "packs/sgeh-notes",
+            "type": "JournalEntry",
+            "label": "Steinhardt's Notes",
+            "banner": "modules/steinhardt-guide-to-the-eldritch-hunt-zh-tw/static/assets/cutouts/banners/compendium.webp",
+            "system": "dnd5e"
+        },
+        {
+            "name": "sgeh-items",
+            "path": "packs/sgeh-items",
+            "type": "Item",
+            "label": "Steinhardt's Items",
+            "banner": "modules/steinhardt-guide-to-the-eldritch-hunt-zh-tw/static/assets/cutouts/banners/compendium.webp",
+            "system": "dnd5e"
+        },
+        {
+            "name": "sgeh-foes",
+            "path": "packs/sgeh-foes",
+            "type": "Actor",
+            "label": "Steinhardt's Foes",
+            "banner": "modules/steinhardt-guide-to-the-eldritch-hunt-zh-tw/static/assets/cutouts/banners/compendium.webp",
+            "system": "dnd5e"
+        }
+    ],
+    "packFolders": [
+        {
+            "name": "Steinhardt's Guide (zh-TW)",
+            "color": "#140b1c",
+            "packs": [
+                "sgeh-tables",
+                "sgeh-stories",
+                "sgeh-notes",
+                "sgeh-items",
+                "sgeh-foes"
+            ]
+        }
+    ],
+    "documentTypes": {
+        "Item": {
+            "trickwep": {
+                "htmlFields": [
+                    "description.value",
+                    "description.chat",
+                    "description.unidentified"
+                ],
+                "filePathFields": {
+                    "img": [
+                        "IMAGE"
+                    ]
+                }
+            }
+        }
+    },
+    "externals": [],
+    "compatibility": {
+        "minimum": "11",
+        "verified": "11.315"
+    },
+    "relationships": {
+        "systems": [
+            {
+                "id": "dnd5e",
+                "compatibility": {
+                    "minimum": "3.1.0",
+                    "verified": "3.1.2",
+                    "maximum": "3.3.0"
+                }
+            }
+        ],
+        "requires": [
+            {
+                "id": "babele",
+                "type": "module",
+                "reason": "Provides the runtime that consumes the bundled zh-TW translation tables under compendium/."
+            },
+            {
+                "id": "foundry_zh-tw",
+                "type": "module",
+                "reason": "Provides the zh-TW core locale that activates this module's Babele translation registration (lang='zh-tw')."
+            }
+        ]
+    },
+    "socket": false,
+    "url": "https://github.com/ericwang01129/Steinhardt-s-Guide-to-the-Eldritch-Hunt-zh-TW",
+    "manifest": "https://raw.githubusercontent.com/ericwang01129/Steinhardt-s-Guide-to-the-Eldritch-Hunt-zh-TW/main/module.json",
+    "download": "https://github.com/ericwang01129/Steinhardt-s-Guide-to-the-Eldritch-Hunt-zh-TW/archive/refs/heads/main.zip",
+    "readme": "https://github.com/ericwang01129/Steinhardt-s-Guide-to-the-Eldritch-Hunt-zh-TW#readme",
+    "flags": {}
+}

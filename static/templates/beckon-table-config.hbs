@@ -1,0 +1,101 @@
+<form autocomplete="off">
+    {{#if owner}}
+    <header class="sheet-header flexrow">
+        <img src="{{data.img}}" data-edit="img" title="{{data.name}}" height="64" width="64"/>
+        <h1 class="name">
+            <input type="text" name="name" value="{{data.name}}" placeholder="{{localize 'Name'}}"/>
+        </h1>
+    </header>
+    {{/if}}
+    <section class="current">
+      <h3 class="topic">Current Conditions</h3>
+      <p class="sub-topic">Eldritch Beckoning Counter: {{beckon.value}}</p> 
+
+      {{#if moons.current}}
+      <p class="sub-topic">{{moons.current.appear}} {{moons.current.date}}: {{{moons.current.moon}}}</p>
+
+      {{else}}
+      <p class="sub-topic">{{localize "SGEH.sheet.moons.none"}}</p>
+      {{/if}}
+    </section>
+
+    {{#if owner}}
+    <section class="queue">
+      <h3 class="topic">Upcoming Moons</h3>
+      {{#unless emptyQueue}}
+      {{#each moons.queue}}
+      <p class="sub-topic">{{appear}} {{date}}: {{{moon}}}</p>
+      {{/each}}
+      {{else}}
+        <p class="sub-topic">{{localize 'SGEH.sheet.moons.noQueue'}}</p>
+      {{/unless}}
+    </section>
+    <section class="sidebar">
+      <h3 class="topic">Beckoning Controls</h3>
+      <div class="config-fields">
+        <label>Days per Month
+          {{numberInput moonConfig.interval name=paths.interval step=1 min=1}}
+        </label>
+        <label>Months per Year
+          {{numberInput moonConfig.months name=paths.months step=1 min=1}}
+        </label>
+        <label>Slumbering Moon
+          <select name="{{paths.slumbering}}">
+            {{selectOptions special.slumbering.options selected=special.slumbering.value blank=""}}
+          </select>
+        </label>
+        <label>Rebirth Moon
+          <select name="{{paths.rebirth}}">
+            {{selectOptions special.rebirth.options selected=special.rebirth.value blank=""}}
+          </select>
+        </label>
+        <label class="references">{{localize 'SGEH.sheet.moons.references'}}
+          <span>
+            {{#each links.rules as |link|}}
+            {{{link}}}
+            {{/each}}
+          </span>
+        </label>
+      </div>
+      <div class="controls">
+        <button {{#if emptyQueue}}class="disabled"{{/if}} data-action="next-moon">Next Moon</button>
+        <button {{#unless moons.current}}class="disabled"{{/unless}} data-action="clear-moon">Clear Current</button>
+
+        <button data-action="roll-moons">Beckon New Moons</button>
+      </div>
+
+      <h3 class="topic config-fields">Session Controls</h3>
+      <div class="config-fields">
+        <label>Session Total
+          {{numberInput beckon.session name=paths.beckon.session step=1}}
+        </label>
+        <label class="references">{{localize 'SGEH.sheet.moons.references'}}
+          <span>
+            {{#each links.session as |link|}}
+            {{{link}}}
+            {{/each}}
+          </span>
+        </label>
+      </div>
+      <div class="controls beckonIncrements">
+        {{#each increments as |increment|}}
+        <button data-action="session-increment" data-increment="{{increment}}">
+          {{{numberFormat increment decimals=0 sign=true}}}
+        </button>
+        {{/each}}
+      </div>
+      <div class="controls">
+        <button data-action="session-save" data-tooltip="{{localize 'SGEH.sheet.beckon.saveTip'}}">{{localize 'SGEH.sheet.beckon.save'}}</button>
+      </div>
+    </section>
+    {{/if}}
+
+    <footer style="display:none" class="sheet-footer flexrow">
+      {{#if owner}}
+      <button class="submit" type="submit"><i class="fas fa-save"></i> {{ localize "TABLE.Update" }}</button>
+      <button class="reset" type="button"><i class="fas fa-undo"></i> {{ localize "TABLE.Reset" }}</button>
+      {{/if}}
+      <button class="roll" type="button"><i class="fas fa-dice-d20"></i> {{ localize "TABLE.Roll" }}</button>
+    </footer>
+</form>
+

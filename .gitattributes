@@ -1,0 +1,19 @@
+* text=auto eol=lf
+
+*.ldb       binary
+*.log       binary
+LOCK        binary
+MANIFEST-*  binary
+CURRENT     binary
+*.webp      binary
+*.png       binary
+*.jpg       binary
+*.jpeg      binary
+*.woff      binary
+*.woff2     binary
+*.ttf       binary
+*.otf       binary
+
+# Pre-built bundles — keep as-is, no diff noise
+*.mjs       linguist-generated=true
+*.css       linguist-generated=true

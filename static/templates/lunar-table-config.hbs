@@ -1,0 +1,55 @@
+{{log this}}
+<form autocomplete="off">
+    {{#if owner}}
+    <header class="sheet-header flexrow">
+        <img src="{{data.img}}" data-edit="img" title="{{data.name}}" height="64" width="64"/>
+        <h1 class="name">
+            <input type="text" name="name" value="{{data.name}}" placeholder="{{localize 'Name'}}"/>
+        </h1>
+    </header>
+    {{/if}}
+    <section class="current">
+      <h3 class="topic">Current Conditions</h3>
+      {{#if moons.current}}
+      <p class="sub-topic">{{moons.current.appear}} {{moons.current.date}}: {{{moons.current.moon}}}</p>
+      
+      {{else}}
+      <p class="sub-topic">{{localize "SGEH.sheet.moons.none"}}</p>
+      {{/if}}
+    </section>
+
+    {{#if owner}}
+    <section class="queue">
+        <h3 class="topic">Upcoming Moons</h3>
+        {{#each moons.queue}}
+        <p class="sub-topic">{{appear}} {{date}}: {{{moon}}}</p>
+        {{/each}}
+            </section>
+    <section class="sidebar">
+        <h3 class="topic">Lunar Controls</h3>
+         <div class="config-fields">
+        <label>Days per Month<input type="number" value="{{moonConfig.interval}}" name="{{paths.interval}}"/></label>
+        <label>Quantity
+          <input type="text" value="{{moonConfig.formula}}" name="{{paths.formula}}"/>
+        </label>
+        </div>
+       <div class="controls">
+          <button {{#if emptyQueue}}class="disabled"{{/if}} data-action="next-moon">Next Moon</button>
+          <button {{#unless moons.current}}class="disabled"{{/unless}} data-action="clear-moon">Clear Current</button>
+
+            <button data-action="roll-moons">Roll New Month</button>
+        </div>
+
+    </section>
+    {{/if}}
+    <footer style="display:none" class="sheet-footer flexrow">
+      {{#if owner}}
+      <button class="submit" type="submit"></button>
+      <button class="reset" type="button"></button>
+      {{/if}}
+      <button class="roll" type="button"></button>
+    </footer>
+</form>
+
+     <!-- Roll Table Footer -->
+
