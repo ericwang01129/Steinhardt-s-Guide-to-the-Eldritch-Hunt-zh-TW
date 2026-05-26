@@ -2,7 +2,7 @@
     "id": "steinhardt-guide-to-the-eldritch-hunt-zh-tw",
     "title": "Steinhardt's Guide to the Eldritch Hunt (zh-TW Integrated)",
     "description": "施坦哈德的狩獵指南（無異端章節）整合中文翻譯版。整合自 segh-monkeydm-without-heretic 模組與 5e-complete 提供的繁體中文 Babele 翻譯文本。",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "authors": [
         {
             "name": "MonkeyDM",

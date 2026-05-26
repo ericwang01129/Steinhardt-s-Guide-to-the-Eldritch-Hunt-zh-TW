@@ -24,7 +24,7 @@
     },
     "property": {
       "awakenedAC": "覺醒突變",
-      "momentumAC": "衝勢護甲（中甲）",
+      "momentumAC": "架勢護甲（中甲）",
       "hereticProgression": "異端",
       "pact": {
         "full": "契術師契約",
@@ -92,8 +92,8 @@
       }
     },
     "momentum": {
-      "buttonTitle": "衝勢",
-      "appTitle": "衝勢控制",
+      "buttonTitle": "架勢",
+      "appTitle": "架勢控制",
       "count": {
         "current": "目前：{num}",
         "max": "上限 {num}"
